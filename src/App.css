@@ -1,5 +1,7 @@
+*{box-sizing: border-box;}
 .App {
-  text-align: center;
+  width: 100%;
+  background: #f3f3f3;
 }
 
 .App-logo {
@@ -29,4 +31,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header{display: flex; justify-content: space-between; flex-wrap: wrap; padding: 10px; background: #333;}
+.footer{background: #333; padding: 10px; color: #fff; text-align: center;}
+.contentRow{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.conLft{width: 50%; padding: 20px; text-align: left; font-size: 18px; font-weight: 600;}
+.conRth{width: 50%; padding: 20px; text-align: left; font-size: 18px; font-weight: 600;}
+.contentRow{display: flex; justify-content: space-between; flex-wrap: wrap; background: #ccc; padding: 30px 0px;}
+.con_title{font-size: 1.5em; text-transform: uppercase; text-align: center; width: 100%;}
+.foo_link{color: #fff; text-decoration: none;}
+.foo_link:hover{color: #f09e08;}
+.conTxt{font-size: 16px; font-weight: 300;}
+.contact_detail i{color: #f09e08; margin: 0px 10px;}
+.social i{margin: 0px 6px; color: #f09e08;}
+.social i:hover{color: #fff;}
+.contact_detail a{color: #fff; text-decoration: none; font-weight: 300;}
+.contact_detail a:hover{color: #f09e08;}
+
+
+@media(max-width: 767px){
+  .conLft {width: 100%;}
+  .conRth{width: 100%;}
+  .header {justify-content: center;}
+  .contact_detail{text-align: center;}
+  .social{margin-left: 20px;}
+}
+@media(max-width: 375px){
+.contact_detail{text-align: center; font-size: 14px;}
+.social{padding-top: 10px;}
 }
