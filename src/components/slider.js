@@ -3,7 +3,7 @@ import React, { Component } from 'react';
     render() {
       return (
         <div className="slider">
-          <img src={'img/slider01.jpg'} />
+          <img src={'img/slider02.jpg'} />
         </div>
       );
     }
